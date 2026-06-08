@@ -4,7 +4,7 @@
 #
 
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
-$(call inherit-product, vendor/nothing/asteroids/asteroids-vendor.mk)
+$(call inherit-product, vendor/nothing/frogger/frogger-vendor.mk)
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
 # A/B
@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display_id_asteroids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946978939328130.xml
+    $(LOCAL_PATH)/configs/display_id_frogger.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947107087237506.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
@@ -227,9 +227,9 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     fstab.zram.2g \
-    init.asteroids.hw.rc \
-    init.asteroids.nfc.sh \
-    init.asteroids.rc \
+    init.frogger.hw.rc \
+    init.frogger.nfc.sh \
+    init.frogger.rc \
     init.class_main.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.target.rc \
     system_dlkm_modprobe.sh \
-    ueventd.asteroids.rc \
+    ueventd.frogger.rc \
     ueventd.qcom.rc
 
 # Kernel
@@ -292,9 +292,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-hal-st21-BASE.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st21-BASE.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-hal-st21-PRO.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st21-PRO.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-hal-st54j-JPN.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st54j-JPN.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-hal-st54j-PRO.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st54j-PRO.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci-JPN.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-JPN.conf
 
 # Nothing-fwk
@@ -323,20 +321,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    AsteroidsApertureDevOverlay \
-    AsteroidsApertureOverlay \
-    AsteroidsEuiccOverlay \
-    AsteroidsFrameworksOverlay \
-    AsteroidsMainlineWifiOverlay \
-    AsteroidsProMainlineWifiOverlay \
-    AsteroidsProSettingsProviderOverlay \
-    AsteroidsProWifiOverlay \
-    AsteroidsSettingsOverlay \
-    AsteroidsSettingsProviderOverlay \
-    AsteroidsSystemUIOverlay \
-    AsteroidsWallpaperPicker2Overlay \
-    AsteroidsWallpaperPicker2PixelOverlay \
-    AsteroidsWifiOverlay \
+    FroggerApertureDevOverlay \
+    FroggerApertureOverlay \
+    FroggerEuiccOverlay \
+    FroggerFrameworksOverlay \
+    FroggerMainlineWifiOverlay \
+    FroggerSettingsOverlay \
+    FroggerSettingsProviderOverlay \
+    FroggerSystemUIOverlay \
+    FroggerWallpaperPicker2Overlay \
+    FroggerWallpaperPicker2PixelOverlay \
+    FroggerWifiOverlay \
     CarrierConfigResCommon_Vendor \
     FrameworksResCommon_Vendor \
     FrameworksResTarget_Vendor \
@@ -397,10 +392,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sku/build_IND.prop:$(TARGET_COPY_OUT_ODM)/etc/build_IND.prop \
     $(LOCAL_PATH)/sku/build_JPN.prop:$(TARGET_COPY_OUT_ODM)/etc/build_JPN.prop \
     $(LOCAL_PATH)/sku/build_TUR.prop:$(TARGET_COPY_OUT_ODM)/etc/build_TUR.prop \
-    $(LOCAL_PATH)/sku/build_ProEEA.prop:$(TARGET_COPY_OUT_ODM)/etc/build_ProEEA.prop \
-    $(LOCAL_PATH)/sku/build_ProIND.prop:$(TARGET_COPY_OUT_ODM)/etc/build_ProIND.prop \
-    $(LOCAL_PATH)/sku/build_ProROW.prop:$(TARGET_COPY_OUT_ODM)/etc/build_ProROW.prop \
-    $(LOCAL_PATH)/sku/build_ProTUR.prop:$(TARGET_COPY_OUT_ODM)/etc/build_ProTUR.prop
 
 PRODUCT_PACKAGES += \
     android.hardware.secure_element-service.thales
