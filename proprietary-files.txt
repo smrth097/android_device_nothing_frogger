@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from the B4.0-251229-1551 release for the Nothing Phone (3a).
+## are from the B4.1-260808-1352 release for the Nothing Phone (4a).
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -20,16 +20,17 @@ vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libhme_dsp_skel.so
 vendor/lib/rfsa/adsp/libmctfengine_skel.so
 vendor/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so
-vendor/lib/rfsa/adsp/libtfadsp_rx.so
-vendor/lib/rfsa/adsp/libtfadsp_tx.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
+vendor/lib64/libarcsoft_triple_sat.old.so
+vendor/lib64/libarcsoft_triple_sat.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libssc_default_listener.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so
 vendor/lib64/rfs/dsp/libdspCV_skel.so
 vendor/lib64/rfs/dsp/libfastcvadsp.so
@@ -146,7 +147,6 @@ vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/firmware/tfa98xx.cnt
 vendor/lib64/libVoiceSdk.so
 vendor/lib64/lib_lvacfs.so
 vendor/lib64/libadm.so
@@ -300,15 +300,11 @@ vendor/lib64/vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.latencyaidlservice-V1-ndk.so
 
 # Camera
-odm/overlayfs_origin/base/etc/camera/camxoverridesettings.txt
-odm/overlayfs_origin/pro/etc/camera/camxoverridesettings.txt
 system_ext/etc/permissions/advancedSample_camera_extensions.xml
 system_ext/framework/androidx.camera.extensions.impl.advanced.jar;MAKE_COPY_RULE_ONLY
 system_ext/lib64/libencoderjpeg_jni.so
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/camera/Ndot-55.otf
-vendor/etc/camera/ancsat/sat_mecp.bin
-vendor/etc/camera/ancsat/sat_mecp_plus.bin
 vendor/etc/camera/basic_param.bin
 vendor/etc/camera/bokeh_caldata_tele_golden.bin
 vendor/etc/camera/bokeh_caldata_tele_golden_Pro.bin
@@ -316,7 +312,9 @@ vendor/etc/camera/bokeh_caldata_uw_golden.bin
 vendor/etc/camera/bokeh_caldata_uw_golden_Pro.bin
 vendor/etc/camera/decision.json
 vendor/etc/camera/decision_pro.json
+vendor/etc/camera/facedetect/VegaAlign.model
 vendor/etc/camera/facedetect/VegaDetect.model
+vendor/etc/camera/facedetect/VegaTrack.model
 vendor/etc/camera/facesr.model
 vendor/etc/camera/filter/aifeiertieta/config.json
 vendor/etc/camera/filter/aifeiertieta/content.json
@@ -426,12 +424,10 @@ vendor/etc/camera/lens_distortion_calibration.bin
 vendor/etc/camera/nothing_node.bin
 vendor/etc/camera/nothing_pipeline.bin
 vendor/etc/camera/ntcamoverridesettings.txt
+vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/plus_param.bin
 vendor/etc/camera/sdk_params_back.json
 vendor/etc/camera/sdk_params_front.json
-vendor/etc/camera/vidhance.lic
-vendor/etc/camera/vidhance_calibration
-vendor/etc/camera/vidhance_calibration_Plus
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.offlinecamera-impl.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
@@ -460,7 +456,6 @@ vendor/firmware/CAMERA_ICP.b20
 vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
-vendor/firmware/DW9785.bin
 vendor/lib64/bm4d68v02s12n52.bin
 vendor/lib64/bm4d68v02s12n53.bin
 vendor/lib64/bm4d68v02s12n63.bin
@@ -482,49 +477,25 @@ vendor/lib64/camera/camxfl115indices.bin
 vendor/lib64/camera/camxfl300v1indices.bin
 vendor/lib64/camera/camxfl300v2indices.bin
 vendor/lib64/camera/camxflcustom300indices.bin
-vendor/lib64/camera/com.qti.eeprom.arcanine_back_imx882_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.arcanine_back_s5kjn5_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.arcanine_imx355_uw_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.arcanine_s5kgn9_wide_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.arcanine_s5kgnj_wide_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.arcanine_s5kjn1_front_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.arcanine_s5kkd1_front_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.frogger_imx355_uw_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.frogger_s5kgn9_wide_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.frogger_s5kkd1_front_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.gt24p128c2csli_imx766.so
 vendor/lib64/camera/com.qti.eeprom.gt24p64b_imx688.so
 vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
-vendor/lib64/camera/com.qti.ois.arcanine_imx882_tele_ois.so
 vendor/lib64/camera/com.qti.ois.bu63169gwz.so
 vendor/lib64/camera/com.qti.ois.dw9784.so
-vendor/lib64/camera/com.qti.sensor.arcanine_qtech_imx882_tele.so
-vendor/lib64/camera/com.qti.sensor.arcanine_shinetech_imx355_uw.so
-vendor/lib64/camera/com.qti.sensor.arcanine_shinetech_s5kgn9_main.so
-vendor/lib64/camera/com.qti.sensor.arcanine_shinetech_s5kgnj_main.so
-vendor/lib64/camera/com.qti.sensor.arcanine_shinetech_s5kjn1_front.so
-vendor/lib64/camera/com.qti.sensor.arcanine_shinetech_s5kjn5_tele.so
-vendor/lib64/camera/com.qti.sensor.arcanine_shinetech_s5kkd1_front.so
 vendor/lib64/camera/com.qti.sensor.camano_imx766.so
 vendor/lib64/camera/com.qti.sensor.camano_s5k3m5.so
 vendor/lib64/camera/com.qti.sensor.s5k3m5.so
 vendor/lib64/camera/com.qti.sensor.s5khp1s.so
 vendor/lib64/camera/com.qti.sensor.s5kjd1sp.so
-vendor/lib64/camera/com.qti.sensormodule.arcanine_qtech_imx882_tele.bin
-vendor/lib64/camera/com.qti.sensormodule.arcanine_shinetech_imx355_uw.bin
-vendor/lib64/camera/com.qti.sensormodule.arcanine_shinetech_s5kgn9_main.bin
-vendor/lib64/camera/com.qti.sensormodule.arcanine_shinetech_s5kgnj_main.bin
-vendor/lib64/camera/com.qti.sensormodule.arcanine_shinetech_s5kjn1_front.bin
-vendor/lib64/camera/com.qti.sensormodule.arcanine_shinetech_s5kjn5_tele.bin
-vendor/lib64/camera/com.qti.sensormodule.arcanine_shinetech_s5kkd1_front.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_back_imx882.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_back_s5kjn5.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_imx355_uw.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_imx355_uw_pro.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_s5kgn9_wide.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_s5kgnj_wide.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_s5kjn1_front.bin
-vendor/lib64/camera/com.qti.tuned.arcanine_s5kkd1_front.bin
+vendor/lib64/camera/com.qti.tuned.frogger_imx355_uw.bin
+vendor/lib64/camera/com.qti.tuned.frogger_s5kgn9_wide.bin
+vendor/lib64/camera/com.qti.tuned.frogger_s5kkd1_front.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/components/com.anc.node.sat.so
+vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
 vendor/lib64/camera/components/com.arcsoft.node.undistort.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -571,6 +542,10 @@ vendor/lib64/camera/components/com.qti.node.swmctf.so
 vendor/lib64/camera/components/com.qti.node.swmfnr.so
 vendor/lib64/camera/components/com.qti.node.swmlremosaic.so
 vendor/lib64/camera/components/com.qti.node.swpdpc.so
+vendor/lib64/camera/components/com.qti.node.swpnc.so
+vendor/lib64/camera/components/com.morpho.node.eisv2.so
+vendor/lib64/camera/components/com.morpho.node.eisv3.so
+vendor/lib64/camera/components/com.morpho.node.gme.so
 vendor/lib64/camera/components/com.qti.node.swpreprocess.so
 vendor/lib64/camera/components/com.qti.node.swregistration.so
 vendor/lib64/camera/components/com.qti.node.swvrt.so
@@ -600,9 +575,6 @@ vendor/lib64/camera/components/com.qtistatic.stats.aec.so
 vendor/lib64/camera/components/com.qtistatic.stats.af.so
 vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib64/camera/components/com.vidhance.node.gme.so;DISABLE_DEPS
-vendor/lib64/camera/components/com.vidhance.node.preview.so;DISABLE_DEPS
-vendor/lib64/camera/components/com.vidhance.node.video.so;DISABLE_DEPS
 vendor/lib64/camera/components/libdepthmapwrapper_itof.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 vendor/lib64/camera/fdconfigpreview.bin
@@ -676,6 +648,7 @@ vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
 vendor/lib64/hw/com.qti.chi.override.so;DISABLE_DEPS
 vendor/lib64/libQnnHtp.so
+vendor/lib64/libQnnHtpV73Stub.so
 vendor/lib64/libQnnSystem.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
@@ -740,8 +713,11 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmorpho_RapidEffect.so
+vendor/lib64/libmorpho_ubwc.so
+vendor/lib64/libmorpho_video_stabilizer.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnoteengine.so
+vendor/lib64/libntcamcustomutil.so
 vendor/lib64/libntcamallocator.so
 vendor/lib64/libntcamcommonutils.so
 vendor/lib64/libntcamcore.so
@@ -761,15 +737,14 @@ vendor/lib64/libopencv3a.so
 vendor/lib64/libopestriping.so
 vendor/lib64/libos.so
 vendor/lib64/libpfr.so
+vendor/lib64/libpnc_cl_program.bin
 vendor/lib64/libportrait_repair_qnn.so
 vendor/lib64/libqll.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libqsegnet.so
 vendor/lib64/libqshcamera.so
-vendor/lib64/librender_lib.so
 vendor/lib64/libsfeShiftExtrapolation.so
-vendor/lib64/libstmobile_effect.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
@@ -778,9 +753,7 @@ vendor/lib64/libubifocus.so
 vendor/lib64/libubwcp.so
 vendor/lib64/libvega_common.so
 vendor/lib64/libvideoml.so
-vendor/lib64/libvidhance.so
 vendor/lib64/libwa_opticalzoomfactor.so
-vendor/lib64/libwa_sat.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
@@ -900,6 +873,8 @@ vendor/etc/clstc_config_library.xml
 vendor/etc/display/DPU1020.xml
 vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/display/perf_hint_threshold.xml
+vendor/etc/display/qdcm_calib_data_nt37706a_amoled_vid_mode_dsi_BOE_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_nt37706a_amoled_vid_mode_dsi_VXN_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_rm69220_amoled_vid_mode_dsi_BOE_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_rm69220_amoled_vid_mode_dsi_visionox_panel_with_DSC.json
 vendor/etc/display/thermallevel_to_fps.xml
@@ -1161,6 +1136,7 @@ vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance_volcano_v1.xml
 vendor/etc/media_codecs_volcano_v1.xml
 vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_volcano_v1.xml
 vendor/etc/media_volcano_v1/video_system_specs.json
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
@@ -1200,12 +1176,9 @@ vendor/lib64/libvmmem.so
 
 # NFC
 vendor/etc/st21nfc_conf_base.txt
-vendor/etc/st21nfc_conf_pro.txt
 vendor/etc/st54j_conf.txt
-vendor/etc/st54j_conf_felica.txt
 vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/st54j_fw.bin
-vendor/firmware/st54j_fw_felica.bin
 
 # NTF
 system_ext/lib64/libntf.so;SYMLINK=system_ext/priv-app/qcrilmsgtunnel/lib/arm64/libntf.so
@@ -1661,16 +1634,6 @@ vendor/bin/trusteduilistener
 vendor/etc/init/trusteduilistener.rc
 vendor/lib64/libTrustedInputUtils.so
 
-# Verizon - from komodo BP2A.250805.005
-product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED|b46894f553b9bdcd4fd6b6832b4839b92b96870e
-product/etc/permissions/com.verizon.apn.xml|21a14491eed042abeecc4c3da6235845d2907c46
-product/etc/permissions/com.verizon.services.xml|8fcd95a9f2bd4871ef30b2e00f45e8f4c1886ee3
-product/etc/permissions/features-verizon.xml|5f3fabe1019abc61531727b5fa51ee8dbbe22e63
-product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED|4c6d03dffc55ec56c97177e315aafa9959780d73
-product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED|d837526351c3c0a187e2fe3de176bb62190caa72
-system_ext/etc/permissions/vzw_mvs_permissions.xml|1f6f9e928992168231ec8aa090ed6020357ae4ad
-system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED|0f11acd4e795fcd126c8eaf57de0a4bf90074577
-
 # Vibrator
 odm/etc/aac_richtap.config
 vendor/firmware/100_Haptic.bin
@@ -1728,6 +1691,7 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.wifidisplaysession-service.xml
 vendor/etc/wfdconfig.xml
 vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so
 vendor/lib64/libFileMux_proprietary.so
+vendor/lib64/libmmcamera_pnc.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libmmrtpdecoder_vendor.so
 vendor/lib64/libmmrtpencoder_vendor.so
