@@ -135,7 +135,7 @@ TARGET_KERNEL_SOURCE := kernel/nothing/sm7635
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/pineapple_perf.config \
-    vendor/asteroids_perf.config
+    vendor/frogger_perf.config
 TARGET_MERGE_DTBS_WILDCARD := *volcano*
 
 # Kernel Modules
