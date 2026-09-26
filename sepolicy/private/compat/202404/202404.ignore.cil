@@ -6,4 +6,5 @@
 (typeattributeset new_objects
   ( new_objects
     glyph_app
-    vendor_nothing_feature_prop))
+    vendor_nothing_feature_prop
+    device_extras))
