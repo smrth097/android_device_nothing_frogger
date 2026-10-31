@@ -67,30 +67,14 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbinder_shim.so'),
     'vendor/bin/xtra-daemon': blob_fixup()
         .add_needed('libbinder_shim.so'),
-    'vendor/etc/lvacfs_params/1mic/LVACFS_Configuration.txt': blob_fixup()
-        .patch_file('audio/lvacfs_1mic_config.patch'),
-    'vendor/etc/lvacfs_params/2mic/LVACFS_Configuration.txt': blob_fixup()
-        .patch_file('audio/lvacfs_2mic_config.patch'),
-    'vendor/etc/media_codecs_volcano_v1.xml': blob_fixup()
+    'vendor/etc/media_codecs_volcano_v0.xml': blob_fixup()
         .regex_replace(r'(?s)(<MediaCodecs.*?>)',r'\1\n    <Include href="media_codecs_dolby_audio.xml" />'),
-    'vendor/lib64/libarcsoft_dark_vision_raw.so': blob_fixup()
-        .clear_symbol_version('remote_register_buf')
-        .clear_symbol_version('rpcmem_alloc')
-        .clear_symbol_version('rpcmem_free'),
     'vendor/lib64/libcne.so': blob_fixup()
         .add_needed('libbinder_shim.so'),
+    'vendor/lib64/libarcsoft_triple_sat.old.so': blob_fixup()
+        .fix_soname(),
     'vendor/lib64/libmorpho_video_stabilizer.so': blob_fixup()
         .remove_needed('libui.so'),
-    'vendor/lib64/libmorpho_RapidEffect.so': blob_fixup()
-        .clear_symbol_version('AHardwareBuffer_allocate')
-        .clear_symbol_version('AHardwareBuffer_describe')
-        .clear_symbol_version('AHardwareBuffer_lockPlanes')
-        .clear_symbol_version('AHardwareBuffer_release')
-        .clear_symbol_version('AHardwareBuffer_unlock'),
-    'vendor/lib64/libntcamallocator.so': blob_fixup()
-        .add_needed('libui_shim.so'),
-    'vendor/lib64/libntcamskia.so': blob_fixup()
-        .add_needed('libnativewindow.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libbinder_shim.so')
         .add_needed('libhidlbase_shim.so'),
@@ -98,8 +82,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbinder_shim.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
-    'vendor/lib64/libwa_sat.so': blob_fixup()
-        .binary_regex_replace(b'/system\x00', b'/vendor\x00'),
     (
         'vendor/lib64/libcapiv2uvvendor.so',
         'vendor/lib64/liblistensoundmodel2vendor.so',
