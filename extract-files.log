@@ -1,0 +1,146 @@
+Parsing device/nothing/frogger/proprietary-firmware.txt
+Parsing device/nothing/frogger/proprietary-files.txt
+Using source dump dir /mnt/build/kageviaanrom/smrth/stock
+Backing up device/nothing/frogger/proprietary-files.txt
+[1;33mFailed to back up product/app/VZWAPNLib/VZWAPNLib.apk[0m
+[1;33mFailed to back up product/etc/permissions/com.verizon.apn.xml[0m
+[1;33mFailed to back up product/etc/permissions/com.verizon.services.xml[0m
+[1;33mFailed to back up product/etc/permissions/features-verizon.xml[0m
+[1;33mFailed to back up product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk[0m
+[1;33mFailed to back up product/priv-app/WfcActivation/WfcActivation.apk[0m
+Backed up system/framework/WfdCommon.jar
+Backed up system_ext/bin/wfdservice
+Backed up system_ext/etc/init/wfdservice.rc
+[1;33mFailed to back up system_ext/etc/permissions/vzw_mvs_permissions.xml[0m
+Backed up system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
+Backed up system_ext/etc/seccomp_policy/wfdservice64.policy
+Backed up system_ext/etc/wfdconfigsink.xml
+Backed up system_ext/lib64/libmmrtpdecoder.so
+Backed up system_ext/lib64/libmmrtpencoder.so
+Backed up system_ext/lib64/libwfdavenhancements.so
+Backed up system_ext/lib64/libwfdclient.so
+Backed up system_ext/lib64/libwfdcommonutils.so
+Backed up system_ext/lib64/libwfdconfigutils.so
+Backed up system_ext/lib64/libwfddisplayconfig.so
+Backed up system_ext/lib64/libwfdmminterface.so
+Backed up system_ext/lib64/libwfdmmsink.so
+Backed up system_ext/lib64/libwfdmmsrc_system.so
+Backed up system_ext/lib64/libwfdnative.so
+Backed up system_ext/lib64/libwfdrtsp.so
+Backed up system_ext/lib64/libwfdservice.so
+Backed up system_ext/lib64/libwfdsinksm.so
+Backed up system_ext/lib64/libwfduibcinterface.so
+Backed up system_ext/lib64/libwfduibcsink.so
+Backed up system_ext/lib64/libwfduibcsinkinterface.so
+Backed up system_ext/lib64/libwfduibcsrc.so
+Backed up system_ext/lib64/libwfduibcsrcinterface.so
+Backed up system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+[1;33mFailed to back up system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk.so[0m
+[1;33mFailed to back up system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk[0m
+Backed up system_ext/priv-app/WfdService/WfdService.apk
+Processing device/nothing/frogger/proprietary-firmware.txt
+Processing device/nothing/frogger/proprietary-files.txt
+[0;31mproduct/app/VZWAPNLib/VZWAPNLib.apk: pinned file not found in backup, trying source[0m
+[0;31mproduct/app/VZWAPNLib/VZWAPNLib.apk: file not found[0m
+[0;31mproduct/etc/permissions/com.verizon.apn.xml: pinned file not found in backup, trying source[0m
+[0;31mproduct/etc/permissions/com.verizon.apn.xml: file not found[0m
+[0;31mproduct/etc/permissions/com.verizon.services.xml: pinned file not found in backup, trying source[0m
+[0;31mproduct/etc/permissions/com.verizon.services.xml: file not found[0m
+[0;31mproduct/etc/permissions/features-verizon.xml: pinned file not found in backup, trying source[0m
+[0;31mproduct/etc/permissions/features-verizon.xml: file not found[0m
+[0;31mproduct/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk: pinned file not found in backup, trying source[0m
+[0;31mproduct/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk: file not found[0m
+[0;31mproduct/priv-app/WfcActivation/WfcActivation.apk: pinned file not found in backup, trying source[0m
+[0;31mproduct/priv-app/WfcActivation/WfcActivation.apk: file not found[0m
+[1;33msystem/framework/WfdCommon.jar: restored pinned file with hash 5c834d8af38bb6aca3cf6d68337261426c1977a8 expected to have hash 27251f8421652af8abffb1f3fd9449fe0ec64ee5[0m
+[1;33msystem/framework/WfdCommon.jar: found pinned file with hash 5c834d8af38bb6aca3cf6d68337261426c1977a8 expected to have hash 27251f8421652af8abffb1f3fd9449fe0ec64ee5[0m
+[1;33msystem_ext/bin/wfdservice: restored pinned file with hash 589621520da356f6724dbe17c5f1209ef1fc7490 but expected hash 6b738758fe3d21d6d53d3fb522e1321b54592fa9[0m
+[1;33msystem_ext/bin/wfdservice: found pinned file with hash 589621520da356f6724dbe17c5f1209ef1fc7490 but expected hash 6b738758fe3d21d6d53d3fb522e1321b54592fa9[0m
+[0;32msystem_ext/etc/init/wfdservice.rc: restored pinned file with hash 907def8565d8f91f531ca7dfad880af05d540b0c [0m
+[0;31msystem_ext/etc/permissions/vzw_mvs_permissions.xml: pinned file not found in backup, trying source[0m
+[0;31msystem_ext/etc/permissions/vzw_mvs_permissions.xml: file not found[0m
+[0;32msystem_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml: restored pinned file with hash 6669d5ee462c981663b8ac573d84d334e4eed96c [0m
+[0;32msystem_ext/etc/seccomp_policy/wfdservice64.policy: restored pinned file with hash 1e331272649395423b11c575892e0bdc9433b820 [0m
+[1;33msystem_ext/etc/wfdconfigsink.xml: restored pinned file with hash c829bce6c01358615ae9021a201d2ef445269fe1 but expected hash 7bbf8092ff574be7ed951b1a4026471f51e4b6f5[0m
+[1;33msystem_ext/etc/wfdconfigsink.xml: found pinned file with hash c829bce6c01358615ae9021a201d2ef445269fe1 but expected hash 7bbf8092ff574be7ed951b1a4026471f51e4b6f5[0m
+[0;31msystem_ext/lib64/libSurfaceUtil_jni.so: file not found[0m
+[1;33msystem_ext/lib64/libmmrtpdecoder.so: restored pinned file with hash 124b031b69015cf0993d8f223edfed4b5f68dc2b but expected hash 51c486b525879c1239062f0fa6b591c3e0abaaa0[0m
+[1;33msystem_ext/lib64/libmmrtpdecoder.so: found pinned file with hash 124b031b69015cf0993d8f223edfed4b5f68dc2b but expected hash 51c486b525879c1239062f0fa6b591c3e0abaaa0[0m
+[1;33msystem_ext/lib64/libmmrtpencoder.so: restored pinned file with hash 4653d181f1808c1ca67675f55a81ec2cdb1b27c3 but expected hash 946d85b6b852ee95e17b40b00c4c85ebfa72c85c[0m
+[1;33msystem_ext/lib64/libmmrtpencoder.so: found pinned file with hash 4653d181f1808c1ca67675f55a81ec2cdb1b27c3 but expected hash 946d85b6b852ee95e17b40b00c4c85ebfa72c85c[0m
+[1;33msystem_ext/lib64/libwfdavenhancements.so: restored pinned file with hash dad0add27e5082e2f9ad6aea06294d3851818178 but expected hash e5a06c6ea07c0cd4ebb73b030b87bf5e51a553e3[0m
+[1;33msystem_ext/lib64/libwfdavenhancements.so: found pinned file with hash dad0add27e5082e2f9ad6aea06294d3851818178 but expected hash e5a06c6ea07c0cd4ebb73b030b87bf5e51a553e3[0m
+[1;33msystem_ext/lib64/libwfdclient.so: restored pinned file with hash 161fc77fa284befe5ca109c5e7cc7cc66f77a454 but expected hash ae443c8657e680558cce30039409cee1e6ab5505[0m
+[1;33msystem_ext/lib64/libwfdclient.so: found pinned file with hash 161fc77fa284befe5ca109c5e7cc7cc66f77a454 but expected hash ae443c8657e680558cce30039409cee1e6ab5505[0m
+[1;33msystem_ext/lib64/libwfdcommonutils.so: restored pinned file with hash c4b22b8dddb7e898f072d514a1287ebab43d7fb3 but expected hash 27c411978b486ccc075862fa2eff450990b9d47a[0m
+[1;33msystem_ext/lib64/libwfdcommonutils.so: found pinned file with hash c4b22b8dddb7e898f072d514a1287ebab43d7fb3 but expected hash 27c411978b486ccc075862fa2eff450990b9d47a[0m
+[1;33msystem_ext/lib64/libwfdconfigutils.so: restored pinned file with hash 308e5446a1802c7bd84debe233d5f0a5a3541d98 but expected hash d05d03298caf2e233c69689cf1fed0dd19a02be1[0m
+[1;33msystem_ext/lib64/libwfdconfigutils.so: found pinned file with hash 308e5446a1802c7bd84debe233d5f0a5a3541d98 but expected hash d05d03298caf2e233c69689cf1fed0dd19a02be1[0m
+[1;33msystem_ext/lib64/libwfddisplayconfig.so: restored pinned file with hash 6d5ed77a65d765e48a23f3519c6c7a5005945086 but expected hash 2717202736b678390be7518ce6f69a63079e4217[0m
+[1;33msystem_ext/lib64/libwfddisplayconfig.so: found pinned file with hash 6d5ed77a65d765e48a23f3519c6c7a5005945086 but expected hash 2717202736b678390be7518ce6f69a63079e4217[0m
+[1;33msystem_ext/lib64/libwfdmminterface.so: restored pinned file with hash cc61087a298aff53c32832cac5256606e202ce29 but expected hash b560306dbc7b2bffb734c8eb6439dd3721f75c12[0m
+[1;33msystem_ext/lib64/libwfdmminterface.so: found pinned file with hash cc61087a298aff53c32832cac5256606e202ce29 but expected hash b560306dbc7b2bffb734c8eb6439dd3721f75c12[0m
+[1;33msystem_ext/lib64/libwfdmmsink.so: restored pinned file with hash a1fab6dbf095a967f4a0949e1a4113ab7e623d5c but expected hash a250fd4085ec04345db8067f11962f57c3b166f0[0m
+[1;33msystem_ext/lib64/libwfdmmsink.so: found pinned file with hash a1fab6dbf095a967f4a0949e1a4113ab7e623d5c but expected hash a250fd4085ec04345db8067f11962f57c3b166f0[0m
+[1;33msystem_ext/lib64/libwfdmmsrc_system.so: restored pinned file with hash 3df06e9b841d8c6bd21f63d04c65c28fbe528acd but expected hash 69e08746a9557ee5fba3e02a8170032db0fa0105[0m
+[1;33msystem_ext/lib64/libwfdmmsrc_system.so: found pinned file with hash 3df06e9b841d8c6bd21f63d04c65c28fbe528acd but expected hash 69e08746a9557ee5fba3e02a8170032db0fa0105[0m
+[1;33msystem_ext/lib64/libwfdnative.so: restored pinned file with hash 7ed83e8660f6aa2ba07e550b56a57192adb6fa33 but expected hash 923acb22f26dc3aab5115cf685a161611e43c018[0m
+[1;33msystem_ext/lib64/libwfdnative.so: found pinned file with hash 7ed83e8660f6aa2ba07e550b56a57192adb6fa33 but expected hash 923acb22f26dc3aab5115cf685a161611e43c018[0m
+[1;33msystem_ext/lib64/libwfdrtsp.so: restored pinned file with hash 337d830acb59644c91a84dea4a5e5e2e33b8242d but expected hash 14eec96c4fa615096c473d5a269ba315a53cfd00[0m
+[1;33msystem_ext/lib64/libwfdrtsp.so: found pinned file with hash 337d830acb59644c91a84dea4a5e5e2e33b8242d but expected hash 14eec96c4fa615096c473d5a269ba315a53cfd00[0m
+[1;33msystem_ext/lib64/libwfdservice.so: restored pinned file with hash 718c813d142cf0e74980f5b7da5a1773f53a9448 expected to have hash 429839b831a8b16fb858179241dc6183c50bdf13[0m
+[1;33msystem_ext/lib64/libwfdservice.so: found pinned file with hash 718c813d142cf0e74980f5b7da5a1773f53a9448 expected to have hash 429839b831a8b16fb858179241dc6183c50bdf13[0m
+[1;33msystem_ext/lib64/libwfdsinksm.so: restored pinned file with hash 0ad7086e7231b43db55bed59a44bd9dab5385b51 but expected hash e714120166d6480ada0b629ddd73c499c73c55a2[0m
+[1;33msystem_ext/lib64/libwfdsinksm.so: found pinned file with hash 0ad7086e7231b43db55bed59a44bd9dab5385b51 but expected hash e714120166d6480ada0b629ddd73c499c73c55a2[0m
+[1;33msystem_ext/lib64/libwfduibcinterface.so: restored pinned file with hash de8ae1660abbd14a6df278ae3e0e56296cefea19 but expected hash 62a596c93efa57bdc79b078d74a3ccf4d19d1f58[0m
+[1;33msystem_ext/lib64/libwfduibcinterface.so: found pinned file with hash de8ae1660abbd14a6df278ae3e0e56296cefea19 but expected hash 62a596c93efa57bdc79b078d74a3ccf4d19d1f58[0m
+[1;33msystem_ext/lib64/libwfduibcsink.so: restored pinned file with hash 2f6debd17ed86e0fc73502b6318f5704dec8c4fa but expected hash a6fc5d0245e23648812a535f7338d562c9317f09[0m
+[1;33msystem_ext/lib64/libwfduibcsink.so: found pinned file with hash 2f6debd17ed86e0fc73502b6318f5704dec8c4fa but expected hash a6fc5d0245e23648812a535f7338d562c9317f09[0m
+[1;33msystem_ext/lib64/libwfduibcsinkinterface.so: restored pinned file with hash 70fa6a4228df4a849220c6f375078d689dedcd76 but expected hash 2db07ec7a9a6206d2782439e247b35fbe62a550f[0m
+[1;33msystem_ext/lib64/libwfduibcsinkinterface.so: found pinned file with hash 70fa6a4228df4a849220c6f375078d689dedcd76 but expected hash 2db07ec7a9a6206d2782439e247b35fbe62a550f[0m
+[1;33msystem_ext/lib64/libwfduibcsrc.so: restored pinned file with hash d4c86e85be9622eca5cb5e095c6ec935e5c7d86a but expected hash ac3e0988fb5c36c6c4561f04e0e5d53d7de2ad76[0m
+[1;33msystem_ext/lib64/libwfduibcsrc.so: found pinned file with hash d4c86e85be9622eca5cb5e095c6ec935e5c7d86a but expected hash ac3e0988fb5c36c6c4561f04e0e5d53d7de2ad76[0m
+[1;33msystem_ext/lib64/libwfduibcsrcinterface.so: restored pinned file with hash 587457b2a5f33f996966f2d35ec4af421a6ea6df but expected hash d19e9b5c35f61cc696a9c999dce6eb11d781bd8c[0m
+[1;33msystem_ext/lib64/libwfduibcsrcinterface.so: found pinned file with hash 587457b2a5f33f996966f2d35ec4af421a6ea6df but expected hash d19e9b5c35f61cc696a9c999dce6eb11d781bd8c[0m
+[1;33msystem_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so: restored pinned file with hash ab8766f017f49bce0ee765fdab7241703084426f but expected hash 7b3051498476202797fce711a6dcc42ae6a7b8ea[0m
+[1;33msystem_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so: found pinned file with hash ab8766f017f49bce0ee765fdab7241703084426f but expected hash 7b3051498476202797fce711a6dcc42ae6a7b8ea[0m
+[0;31msystem_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk.so: pinned file not found in backup, trying source[0m
+[0;31msystem_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk.so: file not found[0m
+[0;31msystem_ext/priv-app/MyVerizonServices/MyVerizonServices.apk: pinned file not found in backup, trying source[0m
+[0;31msystem_ext/priv-app/MyVerizonServices/MyVerizonServices.apk: file not found[0m
+[1;33msystem_ext/priv-app/WfdService/WfdService.apk: restored pinned file with hash dec70ae7c2b431410883ae0500597c50c2a872b0 but expected hash 7d7e4ce1ec07338f1d2abf39035a8f44714a4a40[0m
+[1;33msystem_ext/priv-app/WfdService/WfdService.apk: found pinned file with hash dec70ae7c2b431410883ae0500597c50c2a872b0 but expected hash 7d7e4ce1ec07338f1d2abf39035a8f44714a4a40[0m
+[0;32mvendor/bin/hw/android.hardware.biometrics.face-service.noth: fixed up[0m
+[0;32mvendor/bin/qcc-vendor: fixed up[0m
+[0;32mvendor/bin/qms: fixed up[0m
+[0;32mvendor/bin/xtra-daemon: fixed up[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.40.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd: file not found[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.60.1.2_2.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd: file not found[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.60.1.3_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.18_enpuv4.pmd: file not found[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd: file not found[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd: file not found[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.80.1.5_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd: file not found[0m
+[0;31mvendor/etc/acdbdata/nn_ns_models/fai__4.80.1.5_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd: file not found[0m
+[0;32mvendor/etc/init/vendor.qti.media.c2@1.0-service.rc: fixed up[0m
+[0;32mvendor/etc/lvacfs_params/1mic/LVACFS_Configuration.txt: fixed up[0m
+[0;32mvendor/etc/lvacfs_params/2mic/LVACFS_Configuration.txt: fixed up[0m
+[0;32mvendor/lib64/libVoiceSdk.so: fixed up[0m
+[0;32mvendor/lib64/libarcsoft_dark_vision_raw.so: fixed up[0m
+[0;32mvendor/lib64/libarcsoft_triple_sat.old.so: fixed up[0m
+[0;32mvendor/lib64/libcamera2ndk_vendor-v34.so: fixed up[0m
+[0;32mvendor/lib64/libcapiv2uvvendor.so: fixed up[0m
+[0;32mvendor/lib64/libcne.so: fixed up[0m
+[0;32mvendor/lib64/libdpps.so: fixed up[0m
+[0;32mvendor/lib64/liblistensoundmodel2vendor.so: fixed up[0m
+[0;32mvendor/lib64/libmorpho_RapidEffect.so: fixed up[0m
+[0;32mvendor/lib64/libmorpho_video_stabilizer.so: fixed up[0m
+[0;32mvendor/lib64/libntcamallocator.so: fixed up[0m
+[0;32mvendor/lib64/libntcamskia.so: fixed up[0m
+[0;32mvendor/lib64/libperfgluelayer.so: fixed up[0m
+[0;32mvendor/lib64/libqcc_sdk.so: fixed up[0m
+[0;32mvendor/lib64/libqcodec2_core.so: fixed up[0m
+[0;32mvendor/lib64/libsnapdragoncolor-manager.so: fixed up[0m
+[0;32mvendor/lib64/libstfaceunlockppl.so: fixed up[0m
+[0;32mvendor/lib64/libtensorflowlite_c_vendor.so: fixed up[0m
+[0;32mvendor/lib64/vendor.libdpmframework.so: fixed up[0m
+[0;31mSome files failed to process, exiting[0m
